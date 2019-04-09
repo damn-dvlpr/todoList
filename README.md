@@ -1,5 +1,5 @@
 Presenting to you a simple, but interactive TodoList app which caters to the basic functions.
-Its responsive and is mobile friendly.
+It's responsive and is mobile friendly.                                                                 
 HOW TO USE:
 
 1: Press the edit button to add a new Todo, and make a whole list of them.                                                         
