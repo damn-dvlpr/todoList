@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: roboto;
+    background-image: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image:linear-gradient(to left, #B2FEFA, #0ED2F7); */
+}
+
+
+#container{
+    background-color: #7c90a0;
+    color:white;
+    width:30vw;
+    margin:100px auto;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.1);
+    /* overflow:hidden; */
+    /* z-index: 1;
+    position: absolute;
+    left:35%; */
+}
+h1{
+    margin:0;
+    font-weight: normal;
+    padding:0.660vw 0.660vw 0.660vw 1.320vw;
+    font-size:1.5vw;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.fa-edit{
+    float:right;
+}
+.fa-trash-alt{
+    float:right;
+    margin-right:2vh;
+}
+input[type="text"]{
+    border: none;
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 10px 10px 20px;
+    font-size:20px;
+    line-height:20px;
+    color:#4e5166;
+    height:50px;
+    /* display: none; */
+    transition: display 0.2s linear; 
+}
+
+input[type="text"]:focus{
+    border:2px solid #7c90a0;
+}
+
+/* class to toggle line through and color */
+
+.done{
+    color:brown;
+    text-decoration: line-through;
+}
+
+
+/* basic css of ul */
+
+/* li span{
+    display:inline-block;
+    background-color: #e74c3c;
+    color:white;
+    text-align: center;
+    height:40px;
+    margin-right:20px;
+    width:0;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span{
+    width:40px;
+    opacity:1.0;
+} */
+
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+ul li{
+    padding-left:2vw;
+    display: block;
+    background-color: #d2e4c4;
+    /* border:2px solid green; */
+    min-height:40px;
+    height:fit-content;
+    color:black;
+    line-height:40px;
+    font-size:18px;
+    word-wrap: break-word;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+    /* padding: 5px 5px 5px 10px; */
+}
+
+
+/* to make alternate color strip */
+
+li:nth-child(2n){
+    background-color: #b5cbb7;
+}
+
+@media only screen and (max-width: 900px) {
+    #container{
+        width:80%;
+        margin:100px auto;
+        left:11vw;
+        /* margin-right:1000px; */
+        /* z-index: 1; */
+        /* position: absolute; */
+        /* left:35%; */
+    }
+    h1{
+        font-size: 6vw;
+    }
+    ul li{
+        min-height:35px;
+        line-height: 35px;
+    }
+    input[type="text"]{
+        height:37px;
+    }
+    /* ul li span{
+        width:12vw;
+        opacity:1;
+    }
+    li:hover span{
+        width:12vw;
+    } */
+}
